@@ -24,7 +24,7 @@ const HomepageLayout = () => (
   <Container>
     <DesktopContainer />
     <MobileContainer />
-  </Container>;
-);
+  </Container>
+)
 
 export default HomepageLayout;

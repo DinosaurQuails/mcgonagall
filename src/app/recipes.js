@@ -13,7 +13,7 @@ class RecipeList extends Component {
       <div className="">
 
         <Modal open={this.props.open} onClose={()=>{this.props.close()}} closeIcon>
-          <Modal.Header>Ingredients lists</Modal.Header>
+          <Modal.Header>Recipes</Modal.Header>
             {this.props.recipes.map((recipe)=>{
                 return <Modal.Content key={recipe.id} image>
                 <a href={'http://www.' + recipe.sourceDisplayName + '.com/recipe/'+ recipe.recipeName.split(' ').join('-')}>

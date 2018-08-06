@@ -184,7 +184,7 @@ class ResponsiveContainer extends Component {
     if (this.state.view === 'zip') {
       console.log('show the zip fav')
       return (
-        <ZipPieChart data={this.state.zipcodeData}/>
+        <ZipPieChart data={this.state.zipcodeData} zipcode={this.state.zipcode}/>
         )
     }
   }
@@ -195,6 +195,7 @@ class ResponsiveContainer extends Component {
     this.setState({
       zipcode: event.target.value
     })
+    console.log('whats the zipcode', this.state.zipcode)
   }
 
   render() {
@@ -221,7 +222,7 @@ class ResponsiveContainer extends Component {
           </Grid.Column>
           </Grid.Row>
         </Grid>
-      </Segment>            
+      </Segment>
     </Container>
     )
   }
