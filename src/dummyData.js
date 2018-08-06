@@ -1565,18 +1565,78 @@
         }
     ];
 
-    const testZipData = {};
+    const testZipData = {
+        94123: { Italian: 14,
+                  Moroccan: 4,
+                  Asian: 5,
+                  German: 2,
+                  Cuban: 3,
+                  'Soul Food': 2,
+                  Southwestern: 2,
+                  Tuscan: 2,
+                  Indian: 3,
+                  Sindhi: 3,
+                  Thai: 2,
+                  Jamaican: 1,
+                  Russian: 1,
+                  Chinese: 2,
+                  French: 1,
+                  Portuguese: 1,
+                  Vietnamese: 1,
+                  Hungarian: 1 },
+        78712: { American: 5,
+                 Asian: 2,
+                 Barbecue: 25,
+                 Chinese: 3,
+                 Cuban: 1,
+                 French: 3,
+                 Greek : 1,
+                 Hawaiian: 6,
+                 Hungarian: 2,
+                 Indian: 4,
+                 Italian: 7,
+                 Japanese: 2,
+                 Mediterranean: 1,
+                 Mexican: 9,
+                 'Southern & Soul Food': 6,
+                 Southwestern: 5,
+                 Spanish: 4,
+                 Thai: 3
+                },
+        '03033': { Italian: 5,
+                  Moroccan: 2,
+                  Asian: 1,
+                  German: 1,
+                  Cuban: 2,
+                  'Soul Food': 2,
+                  Southwestern: 7,
+                  American: 8,
+                  Asian: 1,
+                  Barbecue: 3,
+                  Chinese: 2,
+                  French: 5,
+                  Greek : 2,
+                  Hawaiian: 3,
+                  Portuguese: 3,
+                  Vietnamese: 1,
+                  Hungarian: 1,
+                  Indian: 6,
 
-    dummyData.forEach((recipe) => {
-       if(recipe.attributes.cuisine) {
-                 recipe.attributes.cuisine.forEach((type) => {
-            if (testZipData.hasOwnProperty(type)) {
-                testZipData[type]++;
-            } else {
-                testZipData[type]= 1;
-            }
-        });
-       }
-    })
+        }
+    };
+
+    // dummyData.forEach((recipe) => {
+    //    if(recipe.attributes.cuisine) {
+    //              recipe.attributes.cuisine.forEach((type) => {
+    //         if (testZipData.hasOwnProperty(type)) {
+    //             testZipData[type]++;
+    //         } else {
+    //             testZipData[type]= 1;
+    //         }
+    //     });
+    //    }
+    // })
+
+
 
 export default testZipData;

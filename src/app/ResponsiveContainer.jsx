@@ -195,6 +195,7 @@ class ResponsiveContainer extends Component {
     this.setState({
       zipcode: event.target.value
     })
+    console.log('whats the zipcode', this.state.zipcode)
   }
 
   render() {
@@ -221,7 +222,7 @@ class ResponsiveContainer extends Component {
           </Grid.Column>
           </Grid.Row>
         </Grid>
-      </Segment>            
+      </Segment>
     </Container>
     )
   }
