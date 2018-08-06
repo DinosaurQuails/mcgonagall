@@ -184,7 +184,7 @@ class ResponsiveContainer extends Component {
     if (this.state.view === 'zip') {
       console.log('show the zip fav')
       return (
-        <ZipPieChart data={this.state.zipcodeData}/>
+        <ZipPieChart data={this.state.zipcodeData} zipcode={this.state.zipcode}/>
         )
     }
   }

@@ -4,7 +4,7 @@ import { Button, Header, Image, Modal } from 'semantic-ui-react';
 
 const pieOptions = {
   // "pass zipcode by index props here"
-  title: "Favorites of 94123",
+  title: "test",
   pieHole: 0.6,
   slices: [
     {
@@ -50,8 +50,8 @@ class ZipPieChart extends Component {
 
   //convert data from db into proper format if needed and then pass as data value for the Chart component
   formattedData() {
-    const ourData = this.props.data;
-
+    const ourData = this.props.data[this.props.zipcode];
+    console.log('data', ourData)
     let resultArray = [["Age", "Weight"]];
 
     for (var key in ourData) {
